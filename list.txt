@@ -1,0 +1,2 @@
+file '/mnt/Hitachi/Downloads/file1.mp4'
+file '/mnt/Hitachi/Downloads/file2.mp4'

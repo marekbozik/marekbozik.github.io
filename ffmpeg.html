@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+</head>
+<body>
+    <a href="index.html">Back</a>
+    <ul>
+        <li>
+            <div style="border-top-width: 20px;border-top-style: solid; border-color: white;">
+                <code>ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4</code>
+            </div>
+            <a href="list.txt">list.txt</a>
+        </li>
+        <li>
+            <div style="border-top-width: 20px;border-top-style: solid; border-color: white;">
+                <code>ffmpeg -i 'source.mp4' -c:v libx264 -crf 28 -r 20 -s 1920x1080 -c:a copy output.mp4</code>
+            </div>
+        </li>
+        <li>
+            
+            <div style="border-top-width: 20px;border-top-style: solid; border-color: white;">
+                <p> <b>Linux only</b>  - background render</p>
+        
+                <code>nohup ffmpeg -i source.mp4 -c:v libx264 -crf 28 -r 10 -s 1920x1048 output.mp4 &</code>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
